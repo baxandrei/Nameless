@@ -8,7 +8,7 @@
  *
  *  Romanian Language - Admin
  *  Translation By @BaxAndrei ( https://baxandrei.ro )
- *  Last Update: 01/10/2018
+ *  Last Update: 02/10/2018
  */
 
 $language = array(
@@ -365,12 +365,12 @@ $language = array(
     'default_group' => 'Grupul este grupul implicit pentru utilizatorii noi?',
     'user_id' => 'ID utilizator',
     'uuid' => 'UUID',
-	'group_order' => 'Group Order',
-	'group_created_successfully' => 'Group created successfully.',
-	'group_updated_successfully' => 'Group updated successfully.',
-	'group_deleted_successfully' => 'Group deleted successfully.',
-	'unable_to_delete_group' => 'Unable to delete a default group, or a group that can view the StaffCP. Please update the group settings first!',
-	'can_view_staffcp' => 'Can the group view the StaffCP?',
+	'group_order' => 'Ordinea grupului',
+	'group_created_successfully' => 'Grupul a fost creat cu succes.',
+	'group_updated_successfully' => 'Grupul a fost actualizat cu succes.',
+	'group_deleted_successfully' => 'Grupul a fost șters cu succes.',
+	'unable_to_delete_group' => 'Nu se poate șterge un grup prestabilit sau un grup care poate vizualiza ACP. Actualizați mai întâi setările grupului!',
+	'can_view_staffcp' => 'Grupul poate vizualiza ACP?',
 
     // Permissions
     'select_all' => 'Selectează tot',
