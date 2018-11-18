@@ -18,13 +18,13 @@
 		    {if !isset($SELF)}
 		  <div class="btn-group">
 			<!--<a href="{$FOLLOW_LINK}" class="btn btn-primary btn-lg"><i class="fa fa-users fa-fw"></i> {$FOLLOW}</a>-->
-			{if $MOD_OR_ADMIN ne true}<a href="#" data-toggle="modal" data-target="#blockModal" class="btn btn-danger btn-lg"><i class="fa fa-ban fa-fw"></i></a>{/if}
-			<a href="{$MESSAGE_LINK}" class="btn btn-secondary btn-lg"><i class="fa fa-envelope fa-fw"></i></a>
+			{if $MOD_OR_ADMIN ne true}<a href="#" data-toggle="modal" data-target="#blockModal" class="btn btn-outline-danger btn-lg active"><i class="fa fa-ban fa-fw"></i></a>{/if}
+			<a href="{$MESSAGE_LINK}" class="btn btn-outline-secondary btn-lg active"><i class="fa fa-envelope fa-fw"></i></a>
 		  </div>
 		    {else}
 		  <div class="btn-group">
-		    <a href="{$SETTINGS_LINK}" class="btn btn-secondary btn-lg"><i class="fa fa-cogs fa-fw"></i></a>
-		    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#imageModal"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i></button>
+		    <a href="{$SETTINGS_LINK}" class="btn btn-outline-secondary btn-lg active"><i class="fa fa-cogs fa-fw"></i></a>
+		    <button type="button" class="btn btn-outline-info btn-lg active" data-toggle="modal" data-target="#imageModal"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i></button>
 		  </div>
 		    {/if}
 		  {/if}
@@ -248,8 +248,16 @@
 					  <li>{$ABOUT_FIELDS.profile_views.title}</strong> {$ABOUT_FIELDS.profile_views.value}</li>
 					</ul>
 				  {else}
-				    <h2{if $USERNAME_COLOUR != false} style="{$USERNAME_COLOUR}"{/if}>{$NICKNAME}</h2>
+				    <center>
+						<h2{if $USERNAME_COLOUR != false} style="{$USERNAME_COLOUR}"{/if}>{$NICKNAME}</h2>
+						{$USER_TITLE}
+					</center>
 					<hr />
+					<ul>
+					  <li>{$ABOUT_FIELDS.registered.title}</strong> <span rel="tooltip" title="{$ABOUT_FIELDS.registered.tooltip}">{$ABOUT_FIELDS.registered.value}</li>
+					  <li>{$ABOUT_FIELDS.last_seen.title}</strong> <span rel="tooltip" title="{$ABOUT_FIELDS.last_seen.tooltip}">{$ABOUT_FIELDS.last_seen.value}</li>
+					  <li>{$ABOUT_FIELDS.profile_views.title}</strong> {$ABOUT_FIELDS.profile_views.value}</li>
+					</ul>
 				  {/if}
 				</div>
 			  </div>
